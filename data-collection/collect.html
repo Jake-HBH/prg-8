@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer type="module" src="collect.js"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <h1>Hand</h1>
+
+    <section>
+        <h2>Hand Tracking</h2>
+
+        <!-- Nieuw toegevoegd -->
+        <label for="labelInput">Label:</label>
+        <input type="text" id="labelInput" />
+        <button id="logButton">LOG DATA</button>
+
+        <!-- <button id="exportButton">EXPORT DATA</button> -->
+
+        <br><br>
+
+        <button id="webcamButton">START WEBCAM</button>
+        <button id="predictButton">PREDICT</button>
+        <div id="resultDisplay">Resultaat: </div>
+        <div class="videoView">
+            <div style="position: relative;">
+                <video id="webcam" style="position: absolute;" muted autoplay playsinline></video>
+                <canvas id="output_canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

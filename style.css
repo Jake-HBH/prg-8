@@ -1,0 +1,186 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff8e1;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #0288d1;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.videoView {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffeb3b;
+    padding-bottom: 20px;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 5px solid #ff5722;
+    transform: rotateY(180deg);
+}
+
+#output_canvas {
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: auto;
+}
+
+#myimage {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+button {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff9800;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #ff7043;
+    transform: translateY(1px);
+}
+
+button:focus {
+    outline: none;
+}
+
+#predictionOutput,
+#accuracyOutput,
+#feedbackOutput,
+#questionOutput {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0288d1;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+#predictionOutput {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+#accuracyOutput {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+#feedbackOutput {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #388e3c;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #a5d6a7;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#questionOutput {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#status {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .videoView {
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #predictionOutput,
+    #accuracyOutput,
+    #feedbackOutput,
+    #questionOutput {
+        font-size: 1.1rem;
+    }
+
+    #myimage {
+        width: 20px;
+        height: 20px;
+    }
+}

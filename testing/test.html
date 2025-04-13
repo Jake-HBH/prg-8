@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe Handpose</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer type="module" src="test.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+<body>
+<section>
+    <h1>Handpose detection</h1>
+    <button id="trainButton">Train</button>
+    <button id="testButton">Test</button>
+    <p id="status">Wachten op training...</p>
+
+    <div id="confusionMatrixContainer">
+        <h2>Confusion Matrix</h2>
+        <table id="confusionMatrix"></table>
+    </div>
+
+</section>
+</body>
+</html>

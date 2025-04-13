@@ -1,0 +1,47 @@
+#confusionMatrixContainer {
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: fit-content;
+    text-align: center;
+}
+
+#confusionMatrix {
+    border-collapse: collapse;
+    margin-top: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#confusionMatrix th,
+#confusionMatrix td {
+    border: 1px solid #ddd;
+    padding: 0.75em 1.2em;
+    text-align: center;
+    min-width: 70px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+#confusionMatrix th {
+    background-color: #f1f1f1;
+    color: #444;
+    font-weight: 600;
+}
+
+#confusionMatrix td {
+    background-color: #fafafa;
+    color: #333;
+}
+
+#confusionMatrix td:hover {
+    background-color: #e3f2fd;
+}
+
+#accuracyDisplay {
+    margin-top: 1.5em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1976d2;
+}
